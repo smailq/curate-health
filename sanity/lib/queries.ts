@@ -886,6 +886,11 @@ export const SERVICE_LIFESTYLE_BY_SLUG_QUERY = groq`
     },
     hero_secondary_title,
     hero_large_text,
+    referral_form_pdf {
+      asset-> {
+        url,
+      }
+    },
     block_2_title,
     block_2_content,
     block_2_image {
@@ -971,6 +976,11 @@ export const SERVICE_LIFESTYLE_PROGRAM_BY_SLUG_QUERY = groq`
   assistanceSectionTitle,
   assistanceSectionDescription,
   assistanceSectionImage {
+    asset-> {
+      url,
+    }
+  },
+  referral_form_pdf {
     asset-> {
       url,
     }
