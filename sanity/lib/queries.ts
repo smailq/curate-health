@@ -934,6 +934,15 @@ export const SERVICE_LIFESTYLE_BY_SLUG_QUERY = groq`
           }
         }
       }
+    },
+    testimonials[] {
+      name,
+      description,
+      image {
+        asset-> {
+          url
+        }
+      }
     }
   }
 `;
